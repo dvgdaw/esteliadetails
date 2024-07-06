@@ -1,0 +1,33 @@
+section#about {
+
+    div.flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: $gap-d;
+    }
+
+    @media (min-width: 1024px) {
+
+        div.flex-container {
+            flex-direction: row;
+
+            div, p {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+}
+
+span.signature {
+    font-size: 48px; // RWD
+    font-family: Thesignature;
+}

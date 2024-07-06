@@ -1,0 +1,102 @@
+section#contact {
+    background-color: #fff;
+    color: $color1;
+
+    p.contact-info {
+        text-align: center;
+        margin-bottom: $gap-d;
+    }
+
+    div.flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-d; // RWD
+        justify-content: space-between;
+
+        div.widget {
+            width: 100%;
+
+            h4 {
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    // Conjunto icono + texto
+    div.contact-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        svg {
+            width: 24px;
+        }
+
+
+        p{
+            margin-left: 10px;
+        }
+
+    }
+
+    div.acciones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        text-align: center;
+
+        a {
+            display: block;
+            padding: 20px 40px;
+            border-radius: 25px;
+            width: 50%;
+            background-color: $color1;
+            color: $color2;
+            transition: $transition;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: $color2;
+            color: $color1;
+            transition: $transition;
+        }
+
+    }
+
+    div.social-icons {
+        display: flex;
+        justify-content: center;
+        gap: $gap-m;
+        //width: 100%;
+        box-sizing: border-box;
+
+        a {
+            width: 20%;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    @media (min-width: $bpDesktop) {
+    
+        div.flex-container {
+            flex-direction: row;
+            gap: $gap-d;
+        }
+
+        p.contact-info {
+            text-align: center;
+            margin-bottom: $gap-d;
+        }
+        
+    }
+
+}

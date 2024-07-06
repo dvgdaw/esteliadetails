@@ -1,0 +1,44 @@
+section#products {
+    background-color: $color2;
+
+    div.flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: $gap-m; // RWD
+        text-align: center;
+        color: #fff;
+
+        // Widget
+        div {
+            width: 100%;
+            padding: $gap-d; // RWD
+            background-color: $color1;
+            box-shadow: 0px 10px 20px $color1;
+            
+            svg {
+                width: 50px; // RWD
+            }
+
+            h3 {
+                margin: $gap-m 0;
+            }
+            
+            ul {
+                list-style: none;
+            }
+
+        }
+
+    }
+
+    @media (min-width: $bpDesktop) {
+    
+        div.flex-container {
+            flex-direction: row;
+            gap: $gap-m; // RWD
+        }
+
+    }
+
+}
