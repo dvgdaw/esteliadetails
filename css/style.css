@@ -333,6 +333,7 @@ section#products div.flex-container div {
   padding: 100px;
   background-color: #6d6875;
   box-shadow: 0px 10px 20px #6d6875;
+  transition: all 0.2s ease-in;
 }
 section#products div.flex-container div svg {
   width: 50px;
@@ -342,6 +343,13 @@ section#products div.flex-container div h3 {
 }
 section#products div.flex-container div ul {
   list-style: none;
+}
+section#products div.flex-container div:hover {
+  background-color: white;
+  cursor: pointer;
+}
+section#products div.flex-container div:hover * {
+  color: #6d6875;
 }
 @media (min-width: 1024px) {
   section#products div.flex-container {
